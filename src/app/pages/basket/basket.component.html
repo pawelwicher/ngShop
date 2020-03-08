@@ -1,0 +1,12 @@
+<div class="text-center">
+  <h1 class="display-4">Koszyk</h1>
+  <p class="lead">Wybrane przez Ciebie produkty</p>
+</div>
+
+<div class="container">
+  <div *ngFor="let basketItem of basketItems; index as i">{{ i + 1 }} {{ basketItem.name }}</div>
+  <br>
+  <p class="lead">Liczba wybranych przedmiotów: {{ count }}, suma: {{ total | currency }}</p>
+  <br>
+  <button class="btn btn-primary" (click)="clearBasket()">Wyczyść koszyk</button>
+</div>

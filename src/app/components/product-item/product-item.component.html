@@ -1,0 +1,8 @@
+<div class="card" [style.borderColor]="borderColor">
+  <div class="card-body">
+    <h1 class="card-title">{{ product?.name }}</h1>
+    <p class="lead">{{ product?.price | currency }}</p>
+    <p class="card-text">{{ product?.description }}</p>
+    <button class="btn btn-primary" (click)="addToBasket()" [disabled]="disabled">Dodaj do koszyka</button>
+  </div>
+</div>

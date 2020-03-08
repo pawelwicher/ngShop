@@ -1,0 +1,98 @@
+JAVASCRIPT
+
+1. JavaScript, cechy, paradygmaty programowania
+
+2. System typów w JS
+
+3. Prototype chain, dziedziczenie
+
+4. Pojęcie domknięcia w JS
+
+5. Hoisting, var, let i const
+
+6. Omówić petle for in i for of ( Symbol.iterator )
+
+7. Koncepcja truthy i falsy. Które wartości są falsy?
+
+8. Obiekt Object. Wymienić metody ( Object.create(), Object.defineProperty() ). Literały obiektów (get, set, shorthand method names, computed property names)
+
+9. Obiekt Array, proszę wymienić i opisać kilka metod (map, filter, reduce)
+
+10. Promises
+
+11. Arrow functions
+
+12. Object destructuring
+
+
+ANGULAR
+
+1. Główne artefakty angulara
+
+2. Omówić komponenty, z czego się składają, data binding, template syntax, view encapsulation
+
+3. Change detection, strategie, NgZone
+
+4. Angular Lifecycle Hooks
+  OnChange()
+  OnInit()
+  DoCheck()
+  AfterContentInit()
+  AfterContentChecked()
+  AfterViewInit()
+  AfterViewChecked()
+  OnDestroy()
+
+5. Rodzaje dyrektyw, wymienić przykładowe, trackBy w ngfor, co robi gwiazdka (* - *ngFor)
+  The asterisk (*) prefix
+  <div *ngIf="hero" class="name">{{hero.name}}</div>
+
+  The asterisk is "syntactic sugar" for:
+  <ng-template [ngIf]="hero">
+    <div class="name">{{hero.name}}</div>
+  </ng-template>
+
+  <li *ngFor="let user of users; index as i; first as isFirst">
+    {{i}}/{{users.length}}. {{user}} <span *ngIf="isFirst">default</span>
+  </li>
+  index, first, last, even, odd
+
+6. Pipes, wymieć przykładowe (date, uppercase, json, async)
+
+7. DI w angularze, Hierarchical injectors (ModuleInjector, ElementInjector), Dependency providers,
+
+8. Omówić Routing. Z jakich klass anuglarowych korzystamy (Router, ) ? Czym jest RouterOutlet. Czym są guardy ?
+
+9. Template-driven forms, Reactive forms (dyrektywa formControl, FormGroup, FormControl), pristine, touched, valid
+
+10. RxJS i Observables, (hot and cold), wymienic przykladowe operatory, kiedy uzywac unsubscribe
+
+11. Testowanie w angularze, czy pisales testy ?
+
+12. Kompilacje w Angularze
+  Just-in-Time (JIT) is a type of compilation that compiles your app in the browser at runtime.
+  Ahead-of-Time (AOT) is a type of compilation that compiles your app at build time.
+
+  Jakie są zalety AOT
+    The browser downloads a pre-compiled version of the application.
+    Smaller Angular framework download size: Doesn't require downloading the Angular compiler.
+    Detect template errors earlier
+
+
+HTML i CSS
+
+1. Wymienić kilka tagów sematycznych z HTML5
+
+2. Co nam daje SASS (mixiny, zmienne)
+
+3. selektory css: element, id, class, attribute, pseudo-class, pseudo-element
+
+4. Omówić BOX Model (content, padding, border, margin) oraz propertę box-sizing
+
+5. Pozycjowanie elementów w HTML, omówić znane techniki
+
+6. Properta position: relative i absolute
+
+7. Róznica między: display: none i visibility: hidden
+
+8. Jednostki w css: absolutne (px, pt), względne (%, em, vw). Jak nadać szerokosc rowną 100% - 100px ( width: calc(100% - 100px); )

@@ -1,0 +1,13 @@
+<div class="text-center">
+  <h1 class="display-4">Lista produktów</h1>
+  <p class="lead">Wybierz produkt z listy i umieść go w koszyku.</p>
+</div>
+
+<div class="container-fluid px-lg-5">
+  <div class="row row-cols-3">
+    <app-product-item *ngFor="let product of products; odd as isOdd"
+      [product]="product"
+      [borderColor]="isOdd ? 'gray' : 'blue'">
+    </app-product-item>
+  </div>
+</div>

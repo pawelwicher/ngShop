@@ -1,0 +1,64 @@
+Zadania JavaScript
+
+1. Jakie wartości będą miały następujące wyrażenia (porównanie):
+'0' == 0
+0 === '0'
+NaN === NaN
+
+2. Jakie wartości będą miały następujące wyrażenia (arytmetyka):
+2 + '2'
+2 - '2'
+
+3. Co wypisze się na konsoli ?
+for(var i = 0; i < 5; i++) {
+  setTimeout(() => console.log(i), 500);
+}
+
+4. Na jaki problem napotkamy w tym kodzie:
+console.log(0.1 + 0.2);
+console.log(0.1 + 0.2 === 0.3);
+
+5. Co zwróci f i f2 ?
+var obj = {
+  prop: 'foo',
+  f: function() { return this.prop; }
+};
+obj.f();
+var f2 = obj.f;
+f2();
+
+6. Co wypisze się na konsoli ?
+var a = [1, undefined, undefined];
+var b = [1];
+b.length = 3
+
+a.map((_, i) => console.log(i));
+b.map((_, i) => console.log(i));
+
+7. Do czego to może nam się przydać nazwa funkcji 'bar' w tym wyrażeniu ?
+var foo = function bar() { return 42; };
+
+8. Wykonać kowersję zmiennej 'n' na liczbę
+var n = '42';
+var x = ???
+
+9. Zaimplemetować funkcje filter ( Array.prototype.filter() )
+
+10. Napisać funkcję 'sum' tak aby możliwe było wywołanie: sum(1,2); sum(1)(2);
+
+
+Zadanie Angular
+
+- Aplikacja NgShop
+
+- Wykorzystać lokalny serwer (api.ps1)
+
+- Utworzyć strony: stronę główną, listę produktów, podsumowanie zawrtości koszyka
+
+- Lista produktów: wyswietlić wszytkie produkty (nazwa, cena, opis, przycisk 'dodaj do koszyka')
+
+- Na stronie głównej wyświetlić losowy komponent (opcjonalnie)
+
+- Na liście produktów wyróżnić parzyste / nieparzyste (np. inny kolor ramki)
+
+- Podgląd koszyka w headerze (prosty tekst - '2 szt. $47.37'), po kliknięciu przejście do podsumowania
