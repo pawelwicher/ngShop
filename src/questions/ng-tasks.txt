@@ -14,6 +14,11 @@ for(var i = 0; i < 5; i++) {
   setTimeout(() => console.log(i), 500);
 }
 
+3.1 Co wypisze się na konsoli ?
+console.log(1);
+new Promise((resolve, reject) => resolve(2)).then(value => console.log(value));
+console.log(3);
+
 4. Na jaki problem napotkamy w tym kodzie:
 console.log(0.1 + 0.2);
 console.log(0.1 + 0.2 === 0.3);
